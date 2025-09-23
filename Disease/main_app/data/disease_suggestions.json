@@ -1,0 +1,1093 @@
+{
+    "Fungal infection": {
+"good_habits": [
+   "Keep affected areas clean and dry",
+   "Wear breathable fabrics",
+   "Change clothes and undergarments daily",
+   "Use antifungal treatments as prescribed",
+   "Avoid sharing personal items",
+   "Maintain good personal hygiene"
+],
+"good_foods": [
+   "Garlic (natural antifungal)",
+   "Coconut oil",
+   "Probiotic-rich yogurt",
+   "Turmeric",
+   "Green leafy vegetables",
+   "Foods rich in vitamin C",
+   "Ginger",
+   "Apple cider vinegar"
+],
+"notgoodfoods": [
+   "Sugary foods and drinks",
+   "Refined carbohydrates",
+   "Processed foods",
+   "Alcohol",
+   "Yeast-containing foods",
+   "Moldy foods",
+   "Mushrooms"
+]
+},
+"Allergy": {
+"good_habits": [
+   "Identify and avoid triggers",
+   "Keep windows closed during high pollen times",
+   "Use air purifiers",
+   "Regular cleaning and dusting",
+   "Take medications as prescribed",
+   "Shower after outdoor activities"
+],
+"good_foods": [
+   "Local honey",
+   "Foods rich in vitamin C",
+   "Omega-3 rich foods",
+   "Probiotic-rich foods",
+   "Turmeric",
+   "Green tea",
+   "Ginger"
+],
+"notgoodfoods": [
+   "Common allergens (nuts, dairy, etc.)",
+   "Processed foods",
+   "Artificial preservatives",
+   "Sulfites",
+   "Foods high in histamine"
+]
+},
+"GERD": {
+"good_habits": [
+   "Eat smaller meals",
+   "Don't lie down after eating",
+   "Elevate head while sleeping",
+   "Maintain healthy weight",
+   "Avoid tight clothing",
+   "Stop smoking"
+],
+"good_foods": [
+   "Oatmeal",
+   "Bananas",
+   "Melons",
+   "Green vegetables",
+   "Lean proteins",
+   "Non-citrus fruits",
+   "Ginger tea"
+],
+"notgoodfoods": [
+   "Spicy foods",
+   "Citrus fruits",
+   "Tomatoes",
+   "Chocolate",
+   "Coffee",
+   "Alcohol",
+   "Fatty foods"
+]
+},
+"Chronic cholestasis": {
+"good_habits": [
+   "Regular exercise",
+   "Maintain good hygiene",
+   "Get adequate rest",
+   "Take prescribed medications",
+   "Regular medical check-ups",
+   "Avoid excessive heat"
+],
+"good_foods": [
+   "High-fiber foods",
+   "Lean proteins",
+   "Fruits and vegetables",
+   "Whole grains",
+   "Foods rich in vitamin K",
+   "Foods rich in vitamin D"
+],
+"notgoodfoods": [
+   "Alcohol",
+   "Fatty foods",
+   "Processed foods",
+   "High-sodium foods",
+   "Refined sugars"
+]
+},
+"Drug Reaction": {
+"good_habits": [
+   "Keep detailed record of reactions",
+   "Wear medical alert bracelet",
+   "Inform all healthcare providers",
+   "Carry emergency medications",
+   "Read medication labels carefully"
+],
+"good_foods": [
+   "Anti-inflammatory foods",
+   "Berries",
+   "Leafy greens",
+   "Foods rich in vitamin C",
+   "Foods rich in quercetin",
+   "Hydrating foods"
+],
+"notgoodfoods": [
+   "Known trigger foods",
+   "Processed foods",
+   "Artificial additives",
+   "Alcohol",
+   "Caffeine"
+]
+},
+"Diabetes": {
+"good_habits": [
+   "Regular blood sugar monitoring",
+   "Exercise for 30 minutes daily",
+   "Maintain healthy weight",
+   "Take medications as prescribed",
+   "Regular medical check-ups",
+   "Proper foot care",
+   "Stress management"
+],
+"good_foods": [
+   "Leafy greens",
+   "Whole grains",
+   "Lean proteins",
+   "Low-fat dairy",
+   "Berries",
+   "Fish rich in omega-3",
+   "Nuts and seeds",
+   "Citrus fruits"
+],
+"notgoodfoods": [
+   "Sugary beverages",
+   "White bread",
+   "Processed snacks",
+   "Full-fat dairy products",
+   "Fried foods",
+   "Alcohol",
+   "Candy and sweets"
+]
+},
+"Gastroenteritis": {
+"good_habits": [
+   "Stay hydrated",
+   "Rest adequately",
+   "Practice good hand hygiene",
+   "Clean and disinfect surfaces",
+   "Avoid contact with infected people"
+],
+"good_foods": [
+   "Clear broths",
+   "Bananas",
+   "Rice",
+   "Toast",
+   "Applesauce",
+   "Electrolyte solutions",
+   "Plain crackers"
+],
+"notgoodfoods": [
+   "Dairy products",
+   "Spicy foods",
+   "Fatty foods",
+   "Caffeine",
+   "Alcohol",
+   "Raw vegetables",
+   "High-fiber foods"
+]
+},
+"Bronchial Asthma": {
+"good_habits": [
+   "Regular use of prescribed inhalers",
+   "Avoid triggers",
+   "Exercise in clean air",
+   "Keep living space dust-free",
+   "Monitor peak flow",
+   "Regular check-ups"
+],
+"good_foods": [
+   "Fatty fish",
+   "Fruits rich in vitamin C",
+   "Leafy greens",
+   "Ginger",
+   "Turmeric",
+   "Garlic",
+   "Foods rich in magnesium"
+],
+"notgoodfoods": [
+   "Sulfites",
+   "Dried fruits",
+   "Wine",
+   "Processed foods",
+   "Artificial preservatives",
+   "Salt",
+   "Cold drinks"
+]
+},
+"Hypertension": {
+"good_habits": [
+   "Regular blood pressure monitoring",
+   "Daily exercise",
+   "Stress management",
+   "Adequate sleep",
+   "Limit alcohol",
+   "Quit smoking",
+   "Maintain healthy weight"
+],
+"good_foods": [
+   "Leafy greens",
+   "Berries",
+   "Beets",
+   "Fatty fish",
+   "Oats",
+   "Bananas",
+   "Low-fat dairy",
+   "Garlic"
+],
+"notgoodfoods": [
+   "Salty foods",
+   "Processed meats",
+   "Pickled foods",
+   "Caffeine",
+   "Alcohol",
+   "Trans fats",
+   "Added sugars"
+]
+},
+"Migraine": {
+"good_habits": [
+   "Regular sleep schedule",
+   "Stress management",
+   "Stay hydrated",
+   "Exercise regularly",
+   "Keep a migraine diary",
+   "Avoid triggers"
+],
+"good_foods": [
+   "Water-rich fruits",
+   "Leafy greens",
+   "Ginger",
+   "Foods rich in magnesium",
+   "Fatty fish",
+   "Seeds and nuts",
+   "Whole grains"
+],
+"notgoodfoods": [
+   "Aged cheese",
+   "Processed meats",
+   "Chocolate",
+   "Caffeine",
+   "Alcohol",
+   "MSG",
+   "Artificial sweeteners"
+]
+},
+"Cervical spondylosis": {
+"good_habits": [
+   "Regular neck exercises",
+   "Maintain good posture",
+   "Use proper ergonomics",
+   "Regular physical therapy",
+   "Apply heat/cold therapy",
+   "Get adequate rest"
+],
+"good_foods": [
+   "Anti-inflammatory foods",
+   "Foods rich in calcium",
+   "Foods rich in vitamin D",
+   "Omega-3 rich foods",
+   "Fruits and vegetables",
+   "Lean proteins"
+],
+"notgoodfoods": [
+   "Processed foods",
+   "Sugary foods",
+   "Red meat",
+   "Alcohol",
+   "Caffeine",
+   "High-sodium foods"
+]
+},
+"Paralysis (brain hemorrhage)": {
+"good_habits": [
+   "Regular physical therapy",
+   "Occupational therapy",
+   "Speech therapy if needed",
+   "Regular medical check-ups",
+   "Blood pressure monitoring",
+   "Proper positioning"
+],
+"good_foods": [
+   "Omega-3 rich foods",
+   "Foods rich in B vitamins",
+   "Antioxidant-rich foods",
+   "Lean proteins",
+   "Whole grains",
+   "Fresh fruits and vegetables"
+],
+"notgoodfoods": [
+   "High-sodium foods",
+   "Processed foods",
+   "Saturated fats",
+   "Alcohol",
+   "Sugary foods",
+   "Caffeine"
+]
+},
+"Jaundice": {
+"good_habits": [
+   "Rest adequately",
+   "Stay hydrated",
+   "Avoid alcohol",
+   "Regular medical monitoring",
+   "Maintain hygiene",
+   "Get sunlight exposure"
+],
+"good_foods": [
+   "Fresh fruits",
+   "Vegetables",
+   "Whole grains",
+   "Lean proteins",
+   "Green tea",
+   "Water",
+   "Fresh fruit juices"
+],
+"notgoodfoods": [
+   "Alcohol",
+   "Fatty foods",
+   "Processed foods",
+   "Red meat",
+   "Fried foods",
+   "Sugary foods"
+]
+},
+"Malaria": {
+"good_habits": [
+   "Complete prescribed medication",
+   "Rest adequately",
+   "Stay hydrated",
+   "Use mosquito protection",
+   "Regular temperature monitoring",
+   "Follow-up check-ups"
+],
+"good_foods": [
+   "Fresh fruits",
+   "Vegetables",
+   "Soups",
+   "Foods rich in vitamin C",
+   "Foods rich in iron",
+   "Hydrating foods",
+   "Light, easily digestible foods"
+],
+"notgoodfoods": [
+   "Oily foods",
+   "Spicy foods",
+   "Heavy meals",
+   "Caffeine",
+   "Alcohol",
+   "Processed foods"
+]
+},
+"Chicken pox": {
+"good_habits": [
+   "Avoid scratching",
+   "Apply calamine lotion",
+   "Keep nails trimmed",
+   "Rest adequately",
+   "Stay isolated until recovery",
+   "Maintain hygiene"
+],
+"good_foods": [
+   "Soft, bland foods",
+   "Foods rich in vitamin C",
+   "Green leafy vegetables",
+   "Soups",
+   "Fresh fruits",
+   "Yogurt",
+   "Water"
+],
+"notgoodfoods": [
+   "Salty foods",
+   "Spicy foods",
+   "Nuts",
+   "Hard foods",
+   "Processed foods",
+   "Junk food"
+]
+},
+"Dengue": {
+"good_habits": [
+   "Stay hydrated",
+   "Rest adequately",
+   "Regular platelet monitoring",
+   "Use mosquito protection",
+   "Take prescribed medications",
+   "Monitor temperature"
+],
+"good_foods": [
+   "Papaya leaf extract",
+   "Coconut water",
+   "Fresh fruit juices",
+   "Vegetable soup",
+   "Foods rich in iron",
+   "Foods rich in vitamin K",
+   "High-protein foods"
+],
+"notgoodfoods": [
+   "Oily foods",
+   "Spicy foods",
+   "Caffeine",
+   "Alcohol",
+   "Processed foods",
+   "Fast food"
+]
+},
+"Typhoid": {
+"good_habits": [
+   "Complete antibiotic course",
+   "Rest adequately",
+   "Stay hydrated",
+   "Maintain hygiene",
+   "Regular temperature monitoring",
+   "Follow-up check-ups"
+],
+"good_foods": [
+   "Soft, easily digestible foods",
+   "Boiled vegetables",
+   "Rice",
+   "Bananas",
+   "Yogurt",
+   "Clear soups",
+   "Fresh fruit juices"
+],
+"notgoodfoods": [
+   "Raw vegetables",
+   "Raw fruits",
+   "Spicy foods",
+   "High-fiber foods",
+   "Dairy products",
+   "Fried foods"
+]
+},
+"Hepatitis A": {
+"good_habits": [
+   "Rest adequately",
+   "Stay hydrated",
+   "Avoid alcohol",
+   "Practice good hygiene",
+   "Regular medical monitoring",
+   "Avoid sharing personal items"
+],
+"good_foods": [
+   "Fresh fruits",
+   "Vegetables",
+   "Whole grains",
+   "Lean proteins",
+   "Foods rich in fiber",
+   "Foods rich in antioxidants"
+],
+"notgoodfoods": [
+   "Alcohol",
+   "Fatty foods",
+   "Processed foods",
+   "Red meat",
+   "Fried foods",
+   "Sugary foods"
+]
+},
+"Hepatitis B": {
+"good_habits": [
+   "Take prescribed medications",
+   "Avoid alcohol",
+   "Get adequate rest",
+   "Regular medical check-ups",
+   "Practice safe sex",
+   "Avoid sharing personal items"
+],
+"good_foods": [
+   "Vegetables",
+   "Fruits",
+   "Whole grains",
+   "Lean proteins",
+   "Foods rich in antioxidants",
+   "Green tea"
+],
+"notgoodfoods": [
+   "Alcohol",
+   "Processed foods",
+   "Fatty foods",
+   "Salt-rich foods",
+   "Iron-rich foods",
+   "Raw shellfish"
+]
+},
+"Hepatitis C": {
+"good_habits": [
+   "Take antiviral medications",
+   "Avoid alcohol",
+   "Get regular exercise",
+   "Get adequate rest",
+   "Regular medical monitoring",
+   "Maintain good hygiene"
+],
+"good_foods": [
+   "Fresh fruits",
+   "Vegetables",
+   "Whole grains",
+   "Lean proteins",
+   "Foods rich in antioxidants",
+   "Green tea"
+],
+"notgoodfoods": [
+   "Alcohol",
+   "Processed foods",
+   "Fatty foods",
+   "Salt-rich foods",
+   "Iron supplements",
+   "Raw or undercooked seafood"
+]
+},
+"Hepatitis D": {
+"good_habits": [
+   "Get hepatitis B vaccination",
+   "Practice safe sex",
+   "Avoid sharing needles or personal items",
+   "Regular medical check-ups",
+   "Avoid alcohol completely",
+   "Practice good hand hygiene",
+   "Get adequate rest"
+],
+"good_foods": [
+   "Lean proteins",
+   "Whole grains",
+   "Low-fat dairy",
+   "Fresh fruits and vegetables",
+   "Foods rich in antioxidants",
+   "Green tea",
+   "Water and clear fluids"
+],
+"notgoodfoods": [
+   "Alcohol",
+   "Processed foods",
+   "High-fat foods",
+   "Raw or undercooked seafood",
+   "Excess salt",
+   "Sugary foods",
+   "Fried foods"
+]
+},
+"Hepatitis E": {
+"good_habits": [
+   "Drink clean, filtered water",
+   "Practice proper hand washing",
+   "Cook food thoroughly",
+   "Maintain good sanitation",
+   "Avoid raw/undercooked meat",
+   "Regular exercise as tolerated",
+   "Adequate rest"
+],
+"good_foods": [
+   "Boiled water",
+   "Well-cooked vegetables",
+   "Lean proteins",
+   "Fresh fruits",
+   "Whole grains",
+   "Low-fat dairy products",
+   "Herbal teas"
+],
+"notgoodfoods": [
+   "Raw vegetables",
+   "Uncooked meat",
+   "Alcohol",
+   "Street food",
+   "Unpasteurized dairy",
+   "Raw shellfish",
+   "Contaminated water"
+]
+},
+"Alcoholic hepatitis": {
+"good_habits": [
+   "Complete alcohol abstinence",
+   "Regular medical check-ups",
+   "Adequate sleep",
+   "Stress management",
+   "Join support groups",
+   "Exercise as recommended by doctor",
+   "Take prescribed medications regularly"
+],
+"good_foods": [
+   "Fresh fruits and vegetables",
+   "Whole grains",
+   "Lean proteins",
+   "Low-fat dairy",
+   "Foods rich in B vitamins",
+   "Green leafy vegetables",
+   "Plenty of water"
+],
+"notgoodfoods": [
+   "Alcohol (strictly avoid)",
+   "Processed foods",
+   "High-sodium foods",
+   "Red meat",
+   "Fried foods",
+   "Sugary foods",
+   "Caffeinated beverages"
+]
+},
+"Tuberculosis": {
+"good_habits": [
+   "Take prescribed medications regularly",
+   "Complete full course of treatment",
+   "Get adequate rest",
+   "Wear mask when in public",
+   "Regular medical check-ups",
+   "Good ventilation",
+   "Isolation during infectious period"
+],
+"good_foods": [
+   "High-protein foods",
+   "Vitamin C rich fruits",
+   "Green leafy vegetables",
+   "Eggs",
+   "Milk and dairy products",
+   "Whole grains",
+   "Foods rich in zinc"
+],
+"notgoodfoods": [
+   "Alcohol",
+   "Tobacco products",
+   "Processed foods",
+   "Excess sugar",
+   "Fried foods",
+   "Carbonated drinks",
+   "Foods that cause acidity"
+]
+},
+"Common Cold": {
+"good_habits": [
+   "Get adequate rest",
+   "Stay hydrated",
+   "Practice good hand hygiene",
+   "Cover mouth when coughing",
+   "Use tissue for sneezing",
+   "Humidify air",
+   "Gargle with warm salt water"
+],
+"good_foods": [
+   "Chicken soup",
+   "Citrus fruits",
+   "Honey",
+   "Ginger tea",
+   "Garlic",
+   "Hot fluids",
+   "Foods rich in vitamin C"
+],
+"notgoodfoods": [
+   "Dairy products",
+   "Caffeine",
+   "Alcohol",
+   "Sugary foods",
+   "Processed foods",
+   "Fried foods",
+   "Cold drinks"
+]
+},
+"Pneumonia": {
+"good_habits": [
+   "Complete prescribed antibiotics",
+   "Get adequate rest",
+   "Practice deep breathing exercises",
+   "Stay hydrated",
+   "Use humidifier",
+   "Regular medical check-ups",
+   "Stop smoking"
+],
+"good_foods": [
+   "Protein-rich foods",
+   "Vitamin C rich fruits",
+   "Clear soups",
+   "Green leafy vegetables",
+   "Foods rich in zinc",
+   "Whole grains",
+   "Yogurt"
+],
+"notgoodfoods": [
+   "Processed foods",
+   "Alcohol",
+   "Sugary drinks",
+   "Cold foods",
+   "Heavy meals",
+   "Fried foods",
+   "Excessive salt"
+]
+},
+"Dimorphic hemmorhoids(piles)": {
+"good_habits": [
+   "Regular exercise",
+   "Maintain good toilet habits",
+   "Stay hydrated",
+   "Avoid straining during bowel movements",
+   "Keep area clean",
+   "Warm sitz baths",
+   "Don't sit for long periods"
+],
+"good_foods": [
+   "High-fiber foods",
+   "Fresh fruits",
+   "Vegetables",
+   "Whole grains",
+   "Legumes",
+   "Water",
+   "Probiotic foods"
+],
+"notgoodfoods": [
+   "Spicy foods",
+   "Red meat",
+   "Processed foods",
+   "Alcohol",
+   "Caffeinated beverages",
+   "Low-fiber foods",
+   "Deep-fried foods"
+]
+},
+"Heart attack": {
+"good_habits": [
+   "Regular exercise",
+   "Stress management",
+   "Regular blood pressure monitoring",
+   "Take prescribed medications",
+   "Regular medical check-ups",
+   "Adequate sleep",
+   "Stop smoking"
+],
+"good_foods": [
+   "Fresh fruits and vegetables",
+   "Whole grains",
+   "Lean proteins",
+   "Fish rich in omega-3",
+   "Low-fat dairy",
+   "Nuts and seeds",
+   "Olive oil"
+],
+"notgoodfoods": [
+   "Saturated fats",
+   "Trans fats",
+   "High-sodium foods",
+   "Processed foods",
+   "Red meat",
+   "Sugary foods",
+   "Alcohol"
+]
+},
+"Varicose veins": {
+"good_habits": [
+   "Regular exercise",
+   "Elevate legs when resting",
+   "Wear compression stockings",
+   "Avoid standing for long periods",
+   "Maintain healthy weight",
+   "Regular walking",
+   "Avoid tight clothing"
+],
+"good_foods": [
+   "Foods rich in fiber",
+   "Berries",
+   "Citrus fruits",
+   "Foods rich in vitamin C",
+   "Foods rich in vitamin E",
+   "Water",
+   "Foods rich in rutin"
+],
+"notgoodfoods": [
+   "Salty foods",
+   "Processed foods",
+   "Alcohol",
+   "Foods high in sodium",
+   "Caffeine",
+   "Sugar-rich foods",
+   "Fried foods"
+]
+},
+"Hypothyroidism": {
+"good_habits": [
+   "Take medication on empty stomach",
+   "Regular exercise",
+   "Get adequate sleep",
+   "Stress management",
+   "Regular medical check-ups",
+   "Monitor weight",
+   "Stay warm"
+],
+"good_foods": [
+   "Iodine-rich foods",
+   "Selenium-rich foods",
+   "Zinc-rich foods",
+   "Fresh fruits and vegetables",
+   "Lean proteins",
+   "Whole grains",
+   "Fish"
+],
+"notgoodfoods": [
+   "Soy products",
+   "Cruciferous vegetables (raw)",
+   "Processed foods",
+   "Caffeine",
+   "Gluten (if sensitive)",
+   "High-sugar foods",
+   "Alcohol"
+]
+},
+"Hyperthyroidism": {
+"good_habits": [
+   "Take prescribed medications",
+   "Regular medical check-ups",
+   "Stress management",
+   "Get adequate rest",
+   "Avoid excessive heat",
+   "Regular exercise as tolerated",
+   "Practice relaxation techniques"
+],
+"good_foods": [
+   "Low-iodine foods",
+   "Fresh fruits",
+   "Vegetables",
+   "Whole grains",
+   "Lean proteins",
+   "Foods rich in calcium",
+   "Foods rich in vitamin D"
+],
+"notgoodfoods": [
+   "Iodine-rich foods",
+   "Caffeine",
+   "Processed foods",
+   "High-sodium foods",
+   "Sugary foods",
+   "Alcohol",
+   "Excess protein"
+]
+},
+"Hypoglycemia": {
+"good_habits": [
+   "Regular meals",
+   "Carry quick-acting sugar",
+   "Monitor blood sugar",
+   "Regular exercise",
+   "Get adequate sleep",
+   "Avoid skipping meals",
+   "Keep a food diary"
+],
+"good_foods": [
+   "Complex carbohydrates",
+   "Lean proteins",
+   "Whole grains",
+   "Fresh fruits",
+   "Vegetables",
+   "Nuts and seeds",
+   "Low-fat dairy"
+],
+"notgoodfoods": [
+   "Sugary foods",
+   "Alcohol",
+   "Caffeine",
+   "Processed foods",
+   "Simple carbohydrates",
+   "Skipping meals",
+   "Large meals"
+]
+},
+"Osteoarthritis": {
+"good_habits": [
+   "Regular gentle exercise",
+   "Maintain healthy weight",
+   "Use assistive devices if needed",
+   "Practice good posture",
+   "Physical therapy",
+   "Heat/cold therapy",
+   "Regular rest periods"
+],
+"good_foods": [
+   "Anti-inflammatory foods",
+   "Omega-3 rich foods",
+   "Fresh fruits and vegetables",
+   "Whole grains",
+   "Lean proteins",
+   "Foods rich in vitamin D",
+   "Foods rich in calcium"
+],
+"notgoodfoods": [
+   "Processed foods",
+   "Red meat",
+   "Sugar-rich foods",
+   "Alcohol",
+   "Fried foods",
+   "Foods high in purines",
+   "Excess salt"
+]
+},
+"Arthritis": {
+"good_habits": [
+   "Regular exercise",
+   "Maintain healthy weight",
+   "Protect joints",
+   "Use hot/cold therapy",
+   "Get adequate rest",
+   "Practice good posture",
+   "Stress management"
+],
+"good_foods": [
+   "Anti-inflammatory foods",
+   "Omega-3 rich fish",
+   "Fruits and vegetables",
+   "Whole grains",
+   "Nuts and seeds",
+   "Olive oil",
+   "Turmeric"
+],
+"notgoodfoods": [
+   "Processed foods",
+   "Red meat",
+   "Sugar",
+   "Alcohol",
+   "Fried foods",
+   "Dairy (for some)",
+   "Nightshade vegetables (for some)"
+]
+},
+"(vertigo) Paroymsal Positional Vertigo": {
+"good_habits": [
+   "Follow prescribed exercises",
+   "Move slowly and carefully",
+   "Avoid sudden head movements",
+   "Get adequate sleep",
+   "Stress management",
+   "Regular exercise",
+   "Keep head elevated while sleeping"
+],
+"good_foods": [
+   "Foods rich in vitamin D",
+   "Foods rich in calcium",
+   "Fresh fruits and vegetables",
+   "Whole grains",
+   "Lean proteins",
+   "Water",
+   "Ginger"
+],
+"notgoodfoods": [
+   "Caffeine",
+   "Alcohol",
+   "Salt",
+   "Processed foods",
+   "Tyramine-rich foods",
+   "MSG",
+   "Artificial sweeteners"
+]
+},
+"Acne": {
+"good_habits": [
+   "Regular face washing",
+   "Avoid touching face",
+   "Use non-comedogenic products",
+   "Change pillowcase regularly",
+   "Remove makeup before bed",
+   "Stay hydrated",
+   "Manage stress"
+],
+"good_foods": [
+   "Foods rich in zinc",
+   "Fresh fruits and vegetables",
+   "Whole grains",
+   "Lean proteins",
+   "Foods rich in omega-3",
+   "Green tea",
+   "Water"
+],
+"notgoodfoods": [
+   "Dairy products",
+   "High glycemic foods",
+   "Processed foods",
+   "Chocolate",
+   "Greasy foods",
+   "Sugar",
+   "Whey protein supplements"
+]
+},
+"Urinary tract infection": {
+"good_habits": [
+   "Stay hydrated",
+   "Urinate frequently",
+   "Wipe from front to back",
+   "Wear cotton underwear",
+   "Empty bladder after intercourse",
+   "Complete prescribed antibiotics",
+   "Practice good hygiene"
+],
+"good_foods": [
+   "Cranberry juice",
+   "Water",
+   "Vitamin C rich foods",
+   "Probiotics",
+   "Fresh fruits",
+   "Vegetables",
+   "Foods rich in antioxidants"
+],
+"notgoodfoods": [
+   "Caffeine",
+   "Alcohol",
+   "Spicy foods",
+   "Acidic foods",
+   "Artificial sweeteners",
+   "Sugary drinks",
+   "Processed foods"
+]
+},
+"Psoriasis": {
+"good_habits": [
+   "Moisturize regularly",
+   "Get some sun exposure",
+   "Stress management",
+   "Regular exercise",
+   "Avoid skin injuries",
+   "Take prescribed medications",
+   "Keep skin clean"
+],
+"good_foods": [
+   "Anti-inflammatory foods",
+   "Omega-3 rich foods",
+   "Fresh fruits and vegetables",
+   "Lean proteins",
+   "Turmeric",
+   "Green tea",
+   "Foods rich in vitamin D"
+],
+"notgoodfoods": [
+   "Red meat",
+   "Dairy products",
+   "Processed foods",
+   "Alcohol",
+   "Nightshade vegetables",
+   "Gluten (for some)",
+   "Foods high in sugar"
+]
+},
+"Impetigo": {
+"good_habits": [
+   "Keep affected areas clean",
+   "Complete prescribed antibiotics",
+   "Avoid scratching",
+   "Keep nails short and clean",
+   "Use separate towels",
+   "Regular hand washing",
+   "Cover infected areas"
+],
+"good_foods": [
+   "Vitamin C rich foods",
+   "Protein-rich foods",
+   "Foods rich in zinc",
+   "Fresh fruits and vegetables",
+   "Probiotic foods",
+   "Foods rich in vitamin A",
+   "Foods rich in vitamin E"
+],
+"notgoodfoods": [
+   "Processed foods",
+   "Sugary foods",
+   "Foods high in artificial additives",
+   "Junk food",
+   "Dairy products",
+   "Alcohol",
+   "Red meat"
+]
+}
+}

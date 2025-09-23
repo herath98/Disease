@@ -1,0 +1,485 @@
+﻿{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+  
+    <script src="{% static 'jquery.js' %}"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'homepage/bootstrap/css/bootstrap.min.css' %}">
+    
+    
+   <title>Helthmate-Predict Pro</title>
+   
+   <link rel="stylesheet" href="{% static 'homepage/bootstrap/css/bootstrap.min.css' %}">
+   <link rel="stylesheet" href="{% static 'homepage/css.css' %}">
+    
+
+   
+  <style>
+
+
+
+   .img {
+    position: relative;
+    float: left;
+    width:  200px;
+    height: 200px;
+    background-position: 100% 100%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+
+#ss{
+  background-image: url( "{% static 'homepage/img14.jpg' %}");
+  background-attachment: fixed;
+  opacity: 0.93;
+  background-repeat: no-repeat;
+  
+  background-size:cover;
+
+}
+
+  body{
+
+  background-image: url( "{% static 'homepage/img9.jpg' %}");
+  background-attachment: fixed;
+  opacity: 0.93;
+  background-repeat: no-repeat;
+  
+  background-size:cover;
+
+  }
+  ul {
+    list-style-type: none;
+    padding: 0; /* Optional: Remove default padding */
+  }
+a{
+  color: black;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.strain {
+  width: 155px;
+  height: 1px;
+  background-color: #dbdbdb;
+  position: relative;
+  margin: 0px auto;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  -webkit-animation-name: rotate-strain;
+          animation-name: rotate-strain;
+  -webkit-animation-duration: 1.7s;
+          animation-duration: 1.7s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.strain:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #fa4040;
+  left: 0;
+  margin-top: -9px;
+  margin-left: -9px;
+  -webkit-animation-name: strain-size-left;
+          animation-name: strain-size-left;
+  -webkit-animation-duration: 1.7s;
+          animation-duration: 1.7s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.strain:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #13b6e2;
+  right: 0;
+  margin-top: -9px;
+  margin-right: -9px;
+  -webkit-animation-name: strain-size-right;
+          animation-name: strain-size-right;
+  -webkit-animation-duration: 1.7s;
+          animation-duration: 1.7s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.strain:nth-child(1), .strain:nth-child(1):before, .strain:nth-child(1):after {
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+          
+}
+.strain:nth-child(2), .strain:nth-child(2):before, .strain:nth-child(2):after {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.strain:nth-child(3), .strain:nth-child(3):before, .strain:nth-child(3):after {
+  -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
+}
+.strain:nth-child(4), .strain:nth-child(4):before, .strain:nth-child(4):after {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.strain:nth-child(5), .strain:nth-child(5):before, .strain:nth-child(5):after {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+.strain:nth-child(6), .strain:nth-child(6):before, .strain:nth-child(6):after {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+.strain:nth-child(7), .strain:nth-child(7):before, .strain:nth-child(7):after {
+  -webkit-animation-delay: 1.05s;
+          animation-delay: 1.05s;
+}
+.strain:nth-child(8), .strain:nth-child(8):before, .strain:nth-child(8):after {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.strain:nth-child(9), .strain:nth-child(9):before, .strain:nth-child(9):after {
+  -webkit-animation-delay: 1.35s;
+          animation-delay: 1.35s;
+}
+.strain:nth-child(10), .strain:nth-child(10):before, .strain:nth-child(10):after {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.strain:nth-child(11), .strain:nth-child(11):before, .strain:nth-child(11):after {
+  -webkit-animation-delay: 1.65s;
+          animation-delay: 1.65s;
+}
+.strain:nth-child(12), .strain:nth-child(12):before, .strain:nth-child(12):after {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+@-webkit-keyframes rotate-strain {
+  0% {
+    width: 155px;
+  }
+  25% {
+    width: 0;
+  }
+  50% {
+    width: 155px;
+  }
+  75% {
+    width: 0;
+  }
+  100% {
+    width: 155px;
+  }
+}
+
+@keyframes rotate-strain {
+  0% {
+    width: 155px;
+  }
+  25% {
+    width: 0;
+  }
+  50% {
+    width: 155px;
+  }
+  75% {
+    width: 0;
+  }
+  100% {
+    width: 155px;
+  }
+}
+@-webkit-keyframes strain-size-left {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1) translateX(155px);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+@keyframes strain-size-left {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1) translateX(155px);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+@-webkit-keyframes strain-size-right {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1) translateX(-155px);
+  }
+  75% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+@keyframes strain-size-right {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1) translateX(-155px);
+  }
+  75% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+
+
+</style>
+
+
+
+
+    {% block head %}
+
+
+
+    {% endblock %}
+
+
+  
+  </head>
+
+
+  <body>
+
+
+
+      <div style="display:block;" class="container-fluid">
+        <div class="mt-0">
+          <img style="margin-right: 1rem; margin-top:0rem; min-width:10%; max-width: 12%; height: auto;"  alt="admin" src="{% static 'homepage/img12.png' %}"  class="img">
+         </div>
+
+          <div>
+           
+          <h1 style="padding-top: 6rem;font-weight: 800;">HELTHMATE-Predict Pro</h1>   
+          <h6>Self-Care Revolution: Embrace Wellness on Your Terms</h6>
+        </div>
+      
+      
+          <nav class="navbar navbar-expand-lg navbar-dark" style="margin-top: 2rem; background-color: #1d98d1;">
+              <a class="navbar-brand" href="{% url 'home' %}">HealthPredict Pro</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="{% url 'home' %}">Home</a>
+                      </li>
+                      
+      
+      
+                    {% if user.is_authenticated %}
+                      
+                      {% if user.patient %}
+      
+                      <li class="nav-item ml-2">
+                      <li class="nav-link" href="{% url 'patient_ui' %}" style="color: rgb(243, 232, 31);">Welcome, {{user.patient.name}}</li>
+                      </li>
+                      <li class="nav-item ml-0">
+                          <a class="nav-link" href="{% url 'patient_ui' %}">Profile</a>
+                          </li>
+      
+                      {% endif %}
+                      
+                      {% if user.doctor  %}
+      
+                      <li class="nav-item ml-2">
+                        <li class="nav-link" href="{% url 'doctor_ui' %}" style="color: rgb(243, 232, 31);;">Welcome, Dr. {{user.doctor.name}}</li>
+                        </li>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" href="{% url 'doctor_ui' %}">Profile</a>
+                            </li>
+      
+      
+                      {% endif %}
+
+                      {% if user.is_superuser  %}
+      
+                      <li class="nav-item ml-2">
+                        <li class="nav-link" href="{% url 'admin_ui' %}" style="color: rgb(243, 232, 31);;">Admin: {{user.username}}</li>
+                        </li>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" href="{% url 'admin_ui' %}">Profile</a>
+                            </li>
+      
+      
+                      {% endif %}
+      
+                      <li class="nav-item ml-0">
+      <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#logout-modal" style="color: rgb(6, 6, 6);">Log out</button>
+                        
+                      </li>
+      
+      
+      
+      
+                      <!-- Small modal -->
+      
+      <div class="modal fade" id="logout-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header"><h4>Logout <i class="fa fa-lock"></i></h4></div>
+            <div class="modal-body"><i class="fa fa-question-circle"></i><span style="color: rgb(42, 187, 6);">{{user.patient.name}}</span>, Are you sure you want to log-off?</div>
+            <div class="modal-footer"><a href="{% url 'logout' %}" class="btn btn-primary btn-block">Logout</a></div>
+          </div>
+        </div>
+      </div>
+                      
+                      {% else %}
+                      
+                      <li class="nav-item ml-0">
+                          <a class="nav-link" data-toggle="modal" data-target=".bd-example-modal-lg2">Signup</a>
+                      </li>
+                      <li class="nav-item ml-0">
+                          <a class="nav-link" data-toggle="modal" data-target=".bd-example-modal-lg">Log In</a>
+                      </li>
+                      
+                      {% endif %}
+      
+                  </ul>
+              </div>
+          </nav>
+      
+
+
+
+    
+<!-- Large modal -->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+     
+  <center>
+    <h1>Logging  As</h1>
+    </center>
+  <br><br>
+  
+  <center>
+  <form>
+      <div class="container mt-5 mb-5">
+   <div class="row">
+      <div class="col">
+         <a href="{% url 'sign_in_admin' %}">
+  <img  alt="admin" src="{% static 'homepage/my.jpg' %}"  class="img">
+  </a>
+  <p class="text-center">Admin</p>
+      </div>
+  
+      <div class="col">
+  <a href="{% url 'sign_in_doctor' %}">
+  <img  alt="doctor" src="{% static 'homepage/img6.png' %}"  class="img">
+  </a>
+  <p class="text-center">Doctors</p>
+      </div>
+  
+      <div class="col">
+  <a href="{% url 'sign_in_patient' %}">
+  <img  alt="patient" src="{% static 'homepage/img7.png' %}"  class="img">
+  </a>
+  <p class="text-center" >Patient</p>
+      </div>
+    </div>
+    </div>
+  </form>
+  </center>
+  
+      </div>
+    </div>
+  </div>
+
+
+
+  {% block body %}
+
+  {% endblock %}
+
+
+
+
+</div>
+
+
+
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.js"integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+env/
+env/*
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Model binaries
+trained_model
+trained_model*
+
+# Database
+*.sqlite3
+db.sqlite3
+
+# Logs
+*.log
+
+# Other
+*.pyc
+*.pyo
+*.pyd
+*.swp

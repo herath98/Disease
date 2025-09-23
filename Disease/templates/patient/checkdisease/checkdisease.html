@@ -1,0 +1,403 @@
+{% extends "basic.html" %}
+{% load static %}
+
+
+{% block head %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'patient/checkdisease/dps.css' %}">
+
+
+
+<script>
+
+  /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+  function Functionshow() {
+
+    document.getElementById("searchbar").value = '';
+    document.getElementById("myDropdown").classList.toggle("show");
+    search_symptoms();
+
+  }
+
+
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function (event) {
+    if (!event.target.matches('.btn')) {
+      if (!event.target.matches('.searchbardiv')) {
+        if (!event.target.matches('.searchbar')) {
+
+          var dropdowns = document.getElementsByClassName("drop-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    }
+  }
+
+  function Functionsymptoms(name) {
+    var newItem = document.createElement("div");
+    newItem.setAttribute("class", "symptom-item");
+
+    var textarea = document.createElement("textarea");
+    textarea.innerText = name;
+    textarea.setAttribute("class", "symptoms");
+    textarea.setAttribute("readonly", "readonly");
+
+    // Add style to remove the border
+    textarea.style.border = "none";
+
+    // Optionally, you can add more styling if needed
+    textarea.style.padding = "8px"; // Adjust padding as needed
+    textarea.style.backgroundColor = "#f0f0f0"; // Set a background color if desired
+    textarea.style.resize = "none"; // Prevent users from resizing the textarea
+
+    // Append the textarea to the parent element
+    document.getElementById("sympbox").appendChild(textarea);
+
+    var removeButton = document.createElement("button");
+    removeButton.innerHTML = '<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Remove';
+    removeButton.setAttribute("class", "remove-btn btn btn-danger"); // Added Bootstrap "btn" and "btn-danger" classes for styling
+    removeButton.addEventListener("click", function () {
+      newItem.remove(); // Remove the entire item when the remove button is clicked
+    });
+
+    newItem.appendChild(textarea);
+    newItem.appendChild(removeButton);
+
+    document.getElementById("sympbox").appendChild(newItem);
+  }
+
+
+
+
+  //var elements = document.getElementsByClassName("symptoms");
+
+
+  function search_symptoms() {
+    let input = document.getElementById('searchbar').value
+    input = input.toLowerCase();
+    let x = document.getElementsByClassName('dropdown-item');
+
+    for (i = 0; i < x.length; i++) {
+      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+        x[i].style.display = "none";
+      }
+      else {
+        x[i].style.display = "inline-block";
+      }
+    }
+  }
+
+
+  $(document).ready(function () {
+    $("#predict").click(function () {
+      event.preventDefault();
+  
+      var symptoms = document.getElementsByClassName("symptoms");
+      var noofsym = symptoms.length;
+      var symlist = [];
+  
+      if (noofsym == 0) {
+        alert(" please add some symptoms ");
+      } else {
+        for (i = 0; i < symptoms.length; i++) {
+          symlist[i] = symptoms[i].value;
+        }
+  
+        $("#resultdiv").show("slow");
+        $('html,body').animate({
+          scrollTop: $("#resultdiv").offset().top
+        }, 'slow');
+  
+        $.ajax({
+          url: 'checkdisease',
+          type: "POST",
+          data: {
+            "noofsym": noofsym,
+            "symptoms": symlist,
+            csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val()
+          },
+          dataType: 'json',
+          success: function (data) {
+            // Previous response handling
+            document.getElementById('diseasefield').innerText = data["predicteddisease"];
+            document.getElementById('percentage').innerText = data["confidencescore"] + "%";
+            percent = data["confidencescore"];
+            disease = data["predicteddisease"];
+            
+            $('#percentage').css('width', percent + "%");
+            document.getElementById('diseasesearch').innerText = data["predicteddisease"];
+            $("#href").attr("href", "https://www.google.com/search?q=" + disease + "");
+            document.getElementById('consultdoctor').innerText = data["consultdoctor"];
+  
+            // New code for handling suggestions
+            if (data.suggestions) {
+              // Display the suggestions section
+              $("#suggestionsSection").show();
+              
+              // Clear previous suggestions
+              $("#goodHabitsList").empty();
+              $("#goodFoodsList").empty();
+              $("#badFoodsList").empty();
+              
+              // Add good habits
+              data.suggestions.good_habits.forEach(habit => {
+                $("#goodHabitsList").append(`<li class="list-group-item">${habit}</li>`);
+              });
+              
+              // Add good foods
+              data.suggestions.good_foods.forEach(food => {
+                $("#goodFoodsList").append(`<li class="list-group-item">${food}</li>`);
+              });
+              
+              // Add foods to avoid
+              data.suggestions.notgoodfoods.forEach(food => {
+                $("#badFoodsList").append(`<li class="list-group-item">${food}</li>`);
+              });
+            } else {
+              $("#suggestionsSection").hide();
+            }
+          }
+        });
+      }
+    });
+  });
+
+
+  function searchYouTube() {
+    var predictedDisease = document.getElementById('diseasefield').innerText;
+
+    // Construct the YouTube search URL
+    var searchURL = 'https://www.youtube.com/results?search_query=' + encodeURIComponent(predictedDisease);
+
+    // Open a new tab or window with the YouTube search
+    window.open(searchURL, '_blank');
+  }
+
+</script>
+<style>
+  .suggestions-card {
+    margin-top: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .suggestions-header {
+    background-color: #1d98d1;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem 1rem 0 0;
+  }
+  
+  .suggestions-body {
+    padding: 1.5rem;
+  }
+  
+  .suggestion-list {
+    margin-bottom: 1.5rem;
+  }
+  
+  .suggestion-list h5 {
+    color: #1d98d1;
+    margin-bottom: 1rem;
+  }
+  
+  .list-group-item {
+    border-left: 4px solid #1d98d1;
+    margin-bottom: 0.5rem;
+  }
+  </style>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+{% block body %}
+
+
+
+
+
+<div class="container">
+
+  <div class="container">
+    <br>
+    <div class="text-center">
+      <h2 style="font-weight: 800;">
+        Identify possible conditions and treatment related to your symptoms.
+      </h2><br>
+      <h4>We provide probabilities only for the following diseases</h4><br>
+      <p style="color: rgba(128, 128, 128, 0.685);">Fungal infection','Allergy','GERD','Chronic cholestasis','Drug Reaction','Peptic ulcer diseae','AIDS','Diabetes ',
+        'Gastroenteritis','Bronchial Asthma','Hypertension ','Migraine','Cervical spondylosis','Paralysis (brain hemorrhage)',
+        'Jaundice','Malaria','Chicken pox','Dengue','Typhoid','hepatitis A', 'Hepatitis B', 'Hepatitis C', 'Hepatitis D',
+        'Hepatitis E', 'Alcoholic hepatitis','Tuberculosis', 'Common Cold', 'Pneumonia', 'Dimorphic hemmorhoids(piles)',
+        'Heart attack', 'Varicose veins','Hypothyroidism', 'Hyperthyroidism', 'Hypoglycemia', 'Osteoarthristis',
+        'Arthritis', '(vertigo) Paroymsal  Positional Vertigo','Acne', 'Urinary tract infection', 'Psoriasis', 'Impetigo'</p>
+      <br>
+      <button style="border-radius: 1rem; background-color: #1d98d1;border-color: #1d98d1;" onclick="Functionshow()"
+        class="btn btn-primary dropdown-toggle">Add Symptoms</button>
+    </div>
+  </div>
+
+  <div id="myDropdown" class="drop-content">
+
+    <div id="searchbardiv" class="searchbardiv">
+
+      <input id="searchbar" class="searchbar" onkeyup="search_symptoms()" type="text" name="search"
+        placeholder=" Search symptoms.. "> <br>
+    </div>
+
+    <div style="color:rgb(14, 14, 14);border-radius: 2rem;" class="container" id="container-dropdown">
+      {% for i in list2 %}
+
+      <a style="border-radius: 2rem;" class="dropdown-item" onclick="Functionsymptoms(this.textContent)">{{i}}</a>
+
+      {% endfor %}
+    </div>
+  </div>
+
+  <br><br>
+  <div style="padding: 2rem;">
+    <div class="text-center">
+      <div class="card" id="symptoms-box">
+
+        {% csrf_token %}
+        <div style="border-radius: 2rem; background-color: #1d98d1;" class="card-header">Added Symptoms</div>
+        <div style="border: none;" class="card-body" id="sympbox">
+        </div>
+        <br>
+        <div class="card-footer">
+          <button style="background-color:#1d98d1 ;" id="predict" class="btn btn-success">Predict</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div id="resultdiv" style="display: none;">
+  <div id="ss" class="text-center">
+    <div class="card" id="predicted-data">
+      <div id="ss">
+        <div style="font-weight: 500; align-items: center;">
+          <span class="diseasefield">Patient name : {{ user.patient.name }}</span><br>
+          <span class="diseasefield">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Age : {{ user.patient.age }} </span>
+        </div>
+        <span style="font-weight: 500; align-items: center;" class="diseasefield">predicted disease is : </span><span
+          class="diseasefield" id="diseasefield"
+          style="color: #092700; text-shadow: 2px 2px 4px rgb(250, 12, 12);"></span> <br>
+        <br>
+        <span style="font-weight: 500; align-items: center;" class="diseasefield">confidence score of : </span>
+        <span>
+          <div class="progress" style="display: inline-block;width:140px">
+            <div id="percentage" class="progress-bar" style="width: 0%">0%
+            </div>
+          </div>
+        </span>
+
+      </div>
+      
+    </div>
+    <!-- New Suggestions Section -->
+  <div id="suggestionsSection" class="container" style="display: none;">
+    <div class="card suggestions-card">
+      <div class="suggestions-header">
+        <h3 class="text-center mb-0">Recommendations for Your Condition</h3>
+      </div>
+      <div class="suggestions-body">
+        <div class="row">
+          <!-- Good Habits -->
+          <div class="col-md-4 suggestion-list">
+            <h5 class="text-center"><i class="fas fa-check-circle"></i> Recommended Habits</h5>
+            <ul id="goodHabitsList" class="list-group">
+              <!-- Will be populated dynamically -->
+            </ul>
+          </div>
+          
+          <!-- Good Foods -->
+          <div class="col-md-4 suggestion-list">
+            <h5 class="text-center"><i class="fas fa-apple-alt"></i> Recommended Foods</h5>
+            <ul id="goodFoodsList" class="list-group">
+              <!-- Will be populated dynamically -->
+            </ul>
+          </div>
+          
+          <!-- Foods to Avoid -->
+          <div class="col-md-4 suggestion-list">
+            <h5 class="text-center"><i class="fas fa-ban"></i> Foods to Avoid</h5>
+            <ul id="badFoodsList" class="list-group">
+              <!-- Will be populated dynamically -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="text-center mt-4 mb-4">
+      <button class="btn btn-outline-success">
+        <a id="href" href="https://www.google.com/search?q=anuj" target="_blank" rel="noopener noreferrer">Click here to
+          know more about &nbsp
+          <span id="diseasesearch" style="color: rgb(249, 15, 15);"></span></a>
+      </button>
+
+      <button class="btn btn-outline-success" onclick="searchYouTube()">Search YouTube for more information</button>
+
+
+    </div>
+    <br><br>
+
+    <div class="text-center">
+      <h4>This tool does not provide medical advice. It is intended for informational purposes only.
+      </h4>
+      <h4>It is not a substitute for professional medical advice, diagnosis or treatment.
+      </h4>
+      <br><br>
+
+    </div>
+
+
+    <div class="mx-auto text-center " style="width:350px">
+
+
+      <div>
+        <form action="consult_a_doctor" method="GET">
+          {% csrf_token %}
+          <button id="consultbtn" type="submit" class="btn btn-primary"> Consult a <span id="consultdoctor"
+              name="consultdoctor"> </span> doctor</button>
+        </form>
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+</div>
+
+
+
+{% endblock %}
